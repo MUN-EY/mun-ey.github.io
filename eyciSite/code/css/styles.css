@@ -201,19 +201,20 @@ a:hover .logo {
 
 /* Individual Committees Items */
 .Committees-item {
-    background: #506174; /* Slightly lighter blue */
+    background: #506174;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    flex-basis: 27%; /* Make each item take up 27% of the container */
+    flex-basis: 27%; /* Always take up 27% of the container width */
     text-align: center;
     display: flex;
-    flex-direction: column; /* Stack image, title, and text vertically */
-    justify-content: flex-start; /* Ensure content stays at the top */
+    flex-direction: column;
+    justify-content: flex-start;
     position: relative;
-    overflow: hidden; /* Hide overflow if text exceeds */
+    overflow: hidden;
 }
+
 
 
 /* Hover Effect on Committees Item */
