@@ -159,6 +159,15 @@ a:hover .logo {
     padding: 10px 0;
     gap: 10vw; /* Add spacing between buttons */
 }
+
+@media (max-width: 1200px) {
+
+    .navbar {
+        gap: 5vw
+    }
+    
+}
+
   
 .navbar a {
     color: #F9DC5C; /* Gold */
