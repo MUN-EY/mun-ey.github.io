@@ -206,7 +206,8 @@ a:hover .logo {
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    flex-basis: 30%; /* Take up 30% of the container width */
+    flex-basis: 27%; /* Make each item take up 27% of the container */
+    width: 27%; /* Ensure the items take up 27% width */
     text-align: center;
     display: flex;
     flex-direction: column; /* Stack image, title, and text vertically */
@@ -214,6 +215,7 @@ a:hover .logo {
     position: relative;
     overflow: hidden; /* Hide overflow if text exceeds */
 }
+
 
 /* Hover Effect on Committees Item */
 .Committees-item:hover {
