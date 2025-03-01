@@ -259,6 +259,6 @@ a:hover .logo {
     }
 
     .Committees-item {
-        width: 100%; /* Take full width on smaller screens */
+        width: 30%; /* Take full width on smaller screens */
     }
 }
