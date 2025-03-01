@@ -45,7 +45,6 @@ body {
     text-align: center;
     font-size: 20vw; /* Cover half of screen width */
     color: white;
-    white-space: nowrap; /* Keep text in one line */
     line-height: 1.2;
 }
 
