@@ -40,8 +40,9 @@ body {
 .title {
     text-align: center;
     margin-top: 20px;
-    font-size: 2.5rem;
+    font-size: 50vw; /* Set font size to 50% of the viewport width */
     color: #F9DC5C; /* Gold accent */
+    white-space: nowrap; /* Prevents text from wrapping */
 }
 
 /* News Section Container */
