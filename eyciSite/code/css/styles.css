@@ -58,13 +58,6 @@ body {
     color: blue;
 }
 
-/* Prevents excessive scaling */
-@media (max-width: 800px) {
-    .title {
-        font-size: clamp(2.5rem, 20vw, 8rem);
-    }
-}
-
 /* News Section Container */
 .news-container {
     max-width: 800px;
