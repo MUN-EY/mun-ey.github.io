@@ -40,12 +40,14 @@ body {
 .title {
     position: absolute;
     top: 50%;
-    transform: translate(0%, -80%);
+    left: 50%; /* Ensure it's horizontally centered */
+    transform: translate(-50%, -80%); /* Center horizontally, move 80% up vertically */
     text-align: center;
-    font-size: 10vw; /* Cover half of screen width */
+    font-size: 10vw; /* Adjust font size based on viewport width */
     color: white;
     line-height: 1.2;
 }
+
 
 .mun-line {
     display: block; /* Forces M.U.N. to stay on one line */
