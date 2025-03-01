@@ -48,6 +48,14 @@ body {
     line-height: 1.2;
 }
 
+.mun-line {
+    display: block; /* Forces M.U.N. to stay on one line */
+}
+
+.ey-line {
+    display: block; /* Moves E.Y. to the next line */
+}
+
 /* Specific letter colors */
 .gold {
     color: rgb(201, 154, 0);
