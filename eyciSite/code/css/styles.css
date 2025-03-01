@@ -157,7 +157,7 @@ a:hover .logo {
     justify-content: center;
     align-items: center;
     padding: 10px 0;
-    gap: 230px; /* Add spacing between buttons */
+    gap: 15vw; /* Add spacing between buttons */
 }
   
 .navbar a {
@@ -176,15 +176,6 @@ a:hover .logo {
     color: #0A1128; /* Dark text on hover */
     transform: scale(1.2); /* Increase size by 50% on hover */
 }
-
-/* Responsive Design for Smaller Screens */
-@media (max-width: 1000px) {
-    .navbar {
-        gap: calc(100vw / 6); /* One-sixth of the viewport width */
-    }
-}
-
-
 
 /* No scaling effect for active pag
 
