@@ -38,8 +38,6 @@ body {
 
 
 .title {
-    margin-left: -200px;
-    margin-right: -200px;
     position: absolute;
     top: 50%;
     transform: translate(0%, -80%);
