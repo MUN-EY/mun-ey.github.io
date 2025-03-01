@@ -43,7 +43,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    font-size: 40vw; /* Cover half of screen width */
+    font-size: 50vw; /* Cover half of screen width */
     color: white;
     white-space: nowrap; /* Keep text in one line */
     line-height: 1.2;
