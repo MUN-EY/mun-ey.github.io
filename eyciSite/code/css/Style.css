@@ -36,12 +36,18 @@ body {
     visibility: visible;
 }
 
-
 .title {
     text-align: center;
     margin-top: 20px;
     font-size: 2.5rem;
     color: #F9DC5C; /* Gold accent */
+}
+
+/* Responsive Title Adjustment */
+@media (max-width: 400px) {
+    .title {
+        font-size: 2rem;
+    }
 }
 
 /* News Section Container */
@@ -96,7 +102,7 @@ body {
     font-style: italic;
 }
 
-/* Responsive Design for Smaller Screens */
+/* Responsive Design for News Section on Smaller Screens */
 @media (max-width: 600px) {
     .news-container {
         padding: 15px;
@@ -112,8 +118,7 @@ body {
     }
 }
 
-
-/* Logo  */
+/* Logo */
 .logo {
     transition: transform 0.3s ease; /* Smooth transition for scaling */
     width: 100%;
@@ -125,9 +130,6 @@ a:hover .logo {
     transform: scale(1.5); /* Scale the image to 150% of its original size */
 }
 
-
-
-
 /* Navbar Styling */
 .navbar {
     background-color: #1B263B; /* Darker blue */
@@ -135,35 +137,33 @@ a:hover .logo {
     justify-content: center;
     align-items: center;
     padding: 10px 0;
-    gap: 230px; /* Add spacing between buttons */
+    gap: 30px; /* Reduced gap for flexibility */
+    flex-wrap: wrap;
 }
   
 .navbar a {
     color: #F9DC5C; /* Gold */
     text-align: center;
-    margin-top: 30px;
+    margin: 10px;
     padding: 10px 30px;
     text-decoration: none;
     font-size: 18px;
-    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Add transition for scaling */
-    background-color: #00000000; /* Default button color */
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    background-color: transparent;
 }
 
 .navbar a:hover {
     background-color: #778DA9; /* Lighter blue */
     color: #0A1128; /* Dark text on hover */
-    transform: scale(1.2); /* Increase size by 50% on hover */
+    transform: scale(1.2);
 }
-
-
-/* No scaling effect for active pag
 
 /* Description Styling */
 .description {
     text-align: center;
     font-size: 1.2rem;
     max-width: 80%;
-    margin: 40px auto; /* Increased margin to add space */
+    margin: 40px auto;
     background: #1B263B;
     padding: 15px;
     border-radius: 10px;
@@ -175,30 +175,30 @@ a:hover .logo {
     max-width: 90%;
     margin: 40px auto;
     padding: 20px;
-    background: #2f3a4e; /* Dark blue background */
+    background: #2f3a4e;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     display: flex;
-    flex-direction: row;  /* Line up horizontally */
-    justify-content: space-between; /* Keep space between items */
-    gap: 20px; /* Space between committee cards */
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 /* Individual Committees Items */
 .Committees-item {
-    background: #506174; /* Slightly lighter blue */
+    background: #506174;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    flex-basis: 30%; /* Take up 30% of the container width */
+    flex-basis: 30%;
     text-align: center;
     display: flex;
-    flex-direction: column; /* Stack image, title, and text vertically */
-    justify-content: flex-start; /* Ensure content stays at the top */
+    flex-direction: column;
+    justify-content: flex-start;
     position: relative;
-    overflow: hidden; /* Hide overflow if text exceeds */
+    overflow: hidden;
 }
 
 /* Hover Effect on Committees Item */
@@ -209,56 +209,56 @@ a:hover .logo {
 
 /* Committee Images */
 .Committees-item img {
-    width: 100%;  /* Image takes up full width of container, within padding */
-    max-height: 250px; /* Set a maximum height for the image */
-    object-fit: cover;  /* Ensures the image covers the space without stretching */
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
     border-radius: 10px;
 }
 
 /* Committees Titles */
 .Committees-item h2 {
-    color: #F9DC5C; /* Gold title */
+    color: #F9DC5C;
     font-size: 1.5rem;
     margin-bottom: 10px;
     position: relative;
-    z-index: 1; /* Ensure the text is on top of the image */
+    z-index: 1;
 }
 
 /* Committees Text */
 .Committees-item p {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #F4FFFD; /* Light text for readability */
+    color: #F4FFFD;
     position: relative;
-    z-index: 1; /* Ensure the text is on top of the image */
-    word-wrap: break-word; /* Break long words onto the next line */
-    overflow: hidden; /* Hide overflowed text if necessary */
+    z-index: 1;
+    word-wrap: break-word;
+    overflow: hidden;
 }
 
+/* Register Item (Fixed flex-basis) */
 .register-item {
-    background: #506174; /* Slightly lighter blue */
+    background: #506174;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    flex-basis: 300%; /* Take up 30% of the container width */
+    flex-basis: 30%;
     text-align: center;
     display: flex;
-    flex-direction: column; /* Stack image, title, and text vertically */
-    justify-content: flex-start; /* Ensure content stays at the top */
+    flex-direction: column;
+    justify-content: flex-start;
     position: relative;
-    overflow: hidden; /* Hide overflow if text exceeds */
+    overflow: hidden;
 }
 
-
-/* Responsive Design for Smaller Screens */
+/* Responsive Design for Committees Section on Smaller Screens */
 @media (max-width: 900px) {
     .Committees-container {
-        flex-wrap: wrap; /* Allow wrapping on smaller screens */
-        justify-content: center; /* Center the items */
+        justify-content: center;
     }
-
-    .Committees-item {
-        width: 100%; /* Take full width on smaller screens */
+    .Committees-item,
+    .register-item {
+        width: 100%;
+        flex-basis: 100%;
     }
 }
