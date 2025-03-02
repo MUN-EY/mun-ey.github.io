@@ -200,21 +200,20 @@ a:hover .logo {
     flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
-/* Individual Committees Items */
+/* Individual News Items */
 .Committees-item {
-    width: 100%;  /* Forces each item to take full width */
-    max-width: 600px; /* Optional: Limits width for better readability */
-    margin: 0 auto 20px; /* Centers the items and adds spacing */
+    background: #506174; /* Slightly lighter blue for items */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-
-
-/* Hover Effect on Committees Item */
+/* Hover Effect on News Item */
 .Committees-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
-
 /* Committee Images */
 .Committees-item img {
     width: 100%;  /* Image takes up full width of container, within padding */
