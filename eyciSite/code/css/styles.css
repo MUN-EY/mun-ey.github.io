@@ -210,8 +210,8 @@ a:hover .logo {
 
 /* Image styling */
 .committee-img {
-  max-width: 250px;          /* Limit the image width (adjust as needed) */
-  height: auto;              /* Keeps the aspect ratio */
+  width: 10%;          /* Limit the image width (adjust as needed) */
+  height: 100%;              /* Keeps the aspect ratio */
   border: 2px solid #ccc;    /* Optional border */
   border-radius: 5px;        /* Rounded corners (optional) */
   object-fit: cover;         /* Crop image if aspect ratio differs */
@@ -231,7 +231,10 @@ a:hover .logo {
 .committee-content p {
   line-height: 1.6;
   margin-bottom: 1em;
+  word-break: break-word; /* Allows breaking in the middle of words */
+  hyphens: auto; /* Adds a hyphen where words break */
 }
+
 
 .register-item {
     background: #506174; /* Slightly lighter blue */
