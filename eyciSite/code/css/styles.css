@@ -194,60 +194,61 @@ a:hover .logo {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     display: flex;
-    flex-direction: row;  /* Line up horizontally */
-    justify-content: space-between; /* Keep space between items */
-    gap: 20px; /* Space between committee cards */
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-/* Individual News Items */
+/* Individual Committee Items */
 .Committees-item {
-    background: #506174; /* Slightly lighter blue for items */
+    display: flex;
+    flex-direction: row; /* Align image and text horizontally */
+    align-items: center;
+    background: #506174;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    width: 100%; /* Take full width of the container */
-    max-width: 100%; /* Ensure it never overflows */
-    box-sizing: border-box; /* Includes padding in the width calculation */
-}
-
-/* Hover Effect on News Item */
-.Committees-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    gap: 20px; /* Space between image and text */
 }
 
 /* Committee Images */
 .Committees-item img {
-    width: 100%;  /* Image takes up full width of container, within padding */
-    max-width: 600px;
-    max-height: 250px; /* Set a maximum height for the image */
-    object-fit: cover;
+    width: 30%;  /* Image takes up 30% */
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the space */
     border-radius: 10px;
+    filter: brightness(50%);
+}
+
+/* Text Container */
+.Committees-text {
+    width: 70%; /* Takes remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 /* Committees Titles */
-.Committees-item h2 {
-    color: #F9DC5C; /* Gold title */
-    text-align: center;
-    
+.Committees-text h2 {
+    color: #F9DC5C;
     font-size: 1.5rem;
     margin-bottom: 10px;
-    position: relative;
-    z-index: 1; /* Ensure the text is on top of the image */
 }
 
 /* Committees Text */
-.Committees-item p {
+.Committees-text p {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #F4FFFD; /* Light text for readability */
-    position: relative;
-    z-index: 1; /* Ensure the text is on top of the image */
-    word-wrap: break-word; /* Break long words onto the next line */
-    overflow: hidden; /* Hide overflowed text if necessary */
+    color: #F4FFFD;
+    word-wrap: break-word;
 }
+
 
 .register-item {
     background: #506174; /* Slightly lighter blue */
