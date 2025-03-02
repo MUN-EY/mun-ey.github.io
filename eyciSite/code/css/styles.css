@@ -203,7 +203,7 @@ a:hover .logo {
 /* Individual Committee Items */
 .Committees-item {
     display: flex;
-    flex-direction: row; /* Align image and text horizontally */
+    flex-direction: row; /* Image on the left, text on the right */
     align-items: center;
     background: #506174;
     padding: 20px;
@@ -229,16 +229,16 @@ a:hover .logo {
 .Committees-text {
     width: 70%; /* Takes remaining space */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: column; /* Stack title and paragraph */
+    align-items: center; /* Center everything horizontally */
     text-align: center;
 }
 
 /* Committees Titles */
 .Committees-text h2 {
     color: #F9DC5C;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+    font-size: 1.8rem;
+    margin-bottom: 10px; /* Spacing between title and paragraph */
 }
 
 /* Committees Text */
@@ -247,6 +247,7 @@ a:hover .logo {
     line-height: 1.6;
     color: #F4FFFD;
     word-wrap: break-word;
+    max-width: 90%; /* Keeps text from stretching too much */
 }
 
 
