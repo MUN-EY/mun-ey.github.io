@@ -218,29 +218,24 @@ a:hover .logo {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Darkened Committee Images */
+/* Committee Images */
 .Committees-item img {
-    width: 100%;
+    width: 100%;  /* Image takes up full width of container, within padding */
     max-width: 600px;
-    max-height: 250px;
+    max-height: 250px; /* Set a maximum height for the image */
     object-fit: cover;
     border-radius: 10px;
-    filter: brightness(50%); /* Darken image */
 }
 
-/* Committees Titles - Positioned on Top of Image */
+/* Committees Titles */
 .Committees-item h2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Centers text */
     color: #F9DC5C; /* Gold title */
-    font-size: 1.5rem;
-    font-weight: bold;
-    z-index: 2; /* Ensure text is above the image */
-    width: 100%; /* Ensures full width */
     text-align: center;
-    padding: 10px;
+    
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1; /* Ensure the text is on top of the image */
 }
 
 /* Committees Text */
