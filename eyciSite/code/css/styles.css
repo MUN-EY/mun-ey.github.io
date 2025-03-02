@@ -234,14 +234,6 @@ a:hover .logo {
     z-index: 1; /* Ensure the text is on top of the image */
 }
 
-/* Committees Words (Text container) */
-.Committees-words {
-    display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: flex-start; /* Align items to the left */
-    width: 60%; /* Limit the text width to 60% */
-}
-
 /* Committees Text */
 .Committees-item p {
     font-size: 1.1rem;
