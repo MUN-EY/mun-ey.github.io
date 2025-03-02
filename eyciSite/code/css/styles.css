@@ -210,9 +210,8 @@ a:hover .logo {
 
 /* Image styling */
 .committee-img {
-  width: 30%;              /* Set width to 30% of the container */
-  height: auto;            /* Maintain aspect ratio */
-  max-height: 100%;        /* Ensure image doesn't exceed container height */
+  width: 30%;              /* Set width to 30% of the container */         /* Maintain aspect ratio */
+  height: 100%;        /* Ensure image doesn't exceed container height */
   border: 2px solid #ccc; /* Optional border */
   border-radius: 5px;      /* Rounded corners (optional) */
   object-fit: cover;       /* Crop image if aspect ratio differs */
