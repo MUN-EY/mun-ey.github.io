@@ -221,7 +221,7 @@ a:hover .logo {
 /* Committee Images */
 .Committees-item img {
     width: 30%;  /* Image takes up full width of container, within padding */
-    height: 100%
+    height: 100%;
     border-radius: 10px;
     filter: brightness(50%); /* Darken image */
 }
