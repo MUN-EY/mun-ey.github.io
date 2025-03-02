@@ -238,7 +238,7 @@ a:hover .logo {
     z-index: 1; /* Ensure the text is on top of the image */
 }
 
-Committees-words {
+.Committees-words {
     display: flex;
     flex-direction: column; /* Stack elements vertically */
     align-items: flex-start; /* Align items to the left, modify as needed */
