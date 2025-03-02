@@ -247,7 +247,7 @@ a:hover .logo {
     z-index: 1; /* Ensure the text is on top of the image */
     word-wrap: break-word; /* Break long words onto the next line */
     overflow: hidden; /* Hide overflowed text if necessary */
-    width: 60%; /* Limit the text width to 60% */
+    width: -60%; /* Limit the text width to 60% */
     padding-right: 10px; /* Adjust padding as needed */
 }
 
