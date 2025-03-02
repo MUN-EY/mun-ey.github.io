@@ -185,64 +185,36 @@ a:hover .logo {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
-/* Committees Section */
-.Committees-container {
-    max-width: 90%;
-    margin: 40px auto;
-    padding: 20px;
-    background: #2f3a4e; /* Dark blue background */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    display: flex;
-    flex-direction: row; /* Line up horizontally */
-    justify-content: space-between; /* Keep space between items */
-    gap: 20px; /* Space between committee cards */
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+.committee-item {
+  display: flex;             /* Puts image and text side by side */
+  align-items: flex-start;   /* Align them at the top (or center if you prefer) */
+  gap: 20px;                 /* Space between image and text */
+  margin: 20px 0;            /* Some vertical spacing between committee items */
 }
 
-/* Individual Committees Items */
-.Committees-item {
-    background: #506174; /* Slightly lighter blue for items */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    width: 100%; /* Take full width of the container */
-    max-width: 100%; /* Ensure it never overflows */
-    box-sizing: border-box; /* Includes padding in the width calculation */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Align items to the top */
+/* Image styling */
+.committee-img {
+  max-width: 250px;          /* Limit the image width (adjust as needed) */
+  height: auto;              /* Keeps the aspect ratio */
+  border: 2px solid #ccc;    /* Optional border */
+  border-radius: 5px;        /* Rounded corners (optional) */
+  object-fit: cover;         /* Crop image if aspect ratio differs */
 }
 
-/* Committees Titles */
-.Committees-item h2 {
-    color: #F9DC5C; /* Gold title */
-    text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+/* Text Container */
+.committee-content {
+  flex: 1;                   /* Allow the text to take remaining space */
 }
 
-/* Committees Dots Text */
-.Committees-item .dots {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #F4FFFD; /* Light text for readability */
-    position: relative;
-    z-index: 1; /* Ensure the text is on top of the image */
-    word-wrap: break-word; /* Break long words onto the next line */
-    margin-bottom: 15px; /* Space between dots and room number */
-    padding: 0; /* Remove padding */
+/* Headings & Paragraphs (optional custom styling) */
+.committee-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
-/* Committees Room Number */
-.Committees-item .date {
-    font-size: 1.1rem;
-    color: #F4FFFD;
-    opacity: 0.7;
-    font-style: italic;
-    margin-top: 10px; /* Add space above the room number */
-    align-self: flex-end; /* Align room number to the bottom of the container */
+.committee-content p {
+  line-height: 1.6;
+  margin-bottom: 1em;
 }
 
 .register-item {
@@ -258,17 +230,4 @@ a:hover .logo {
     justify-content: flex-start; /* Ensure content stays at the top */
     position: relative;
     overflow: hidden; /* Hide overflow if text exceeds */
-}
-
-
-/* Responsive Design for Smaller Screens */
-@media (max-width: 900px) {
-    .Committees-container {
-        flex-wrap: wrap; /* Allow wrapping on smaller screens */
-        justify-content: center; /* Center the items */
-    }
-
-    .Committees-item {
-        width: 30%; /* Take full width on smaller screens */
-    }
 }
