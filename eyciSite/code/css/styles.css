@@ -185,7 +185,7 @@ a:hover .logo {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
-/* Committees Section Container */
+/* Committees Section */
 .Committees-container {
     max-width: 90%;
     margin: 40px auto;
@@ -194,7 +194,7 @@ a:hover .logo {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     display: flex;
-    flex-direction: row;  /* Line up horizontally */
+    flex-direction: row; /* Line up horizontally */
     justify-content: space-between; /* Keep space between items */
     gap: 20px; /* Space between committee cards */
     flex-wrap: wrap; /* Allow wrapping for smaller screens */
@@ -207,21 +207,12 @@ a:hover .logo {
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    width: 100%; /* Default full width for smaller screens */
-    display: flex; /* Use flexbox for layout inside the item */
-    flex-direction: row; /* Keep items in a horizontal row */
-    align-items: center; /* Vertically center the items */
-    box-sizing: border-box; /* Ensures padding is included in the width */
-}
-
-/* Committee Image */
-.Committees-item img {
-    width: 40%;  /* Image takes up 40% of the container */
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
-    filter: brightness(50%); /* Darken image */
-    margin-right: 20px; /* Add space between the image and text */
+    width: 100%; /* Take full width of the container */
+    max-width: 100%; /* Ensure it never overflows */
+    box-sizing: border-box; /* Includes padding in the width calculation */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the top */
 }
 
 /* Committees Titles */
@@ -230,23 +221,29 @@ a:hover .logo {
     text-align: center;
     font-size: 1.5rem;
     margin-bottom: 10px;
-    position: relative;
-    z-index: 1; /* Ensure the text is on top of the image */
 }
 
-/* Committees Text */
-.Committees-item p {
+/* Committees Dots Text */
+.Committees-item .dots {
     font-size: 1.1rem;
     line-height: 1.6;
     color: #F4FFFD; /* Light text for readability */
     position: relative;
     z-index: 1; /* Ensure the text is on top of the image */
     word-wrap: break-word; /* Break long words onto the next line */
-    overflow: hidden; /* Hide overflowed text if necessary */
-    width: 100%; /* Make text take full width within its container */
-    padding-right: 10px; /* Adjust padding as needed */
+    margin-bottom: 15px; /* Space between dots and room number */
+    padding: 0; /* Remove padding */
 }
 
+/* Committees Room Number */
+.Committees-item .date {
+    font-size: 1.1rem;
+    color: #F4FFFD;
+    opacity: 0.7;
+    font-style: italic;
+    margin-top: 10px; /* Add space above the room number */
+    align-self: flex-end; /* Align room number to the bottom of the container */
+}
 
 .register-item {
     background: #506174; /* Slightly lighter blue */
