@@ -217,6 +217,7 @@ a:hover .logo {
 /* Committee Images */
 .Committees-item img {
     width: 100%;  /* Image takes up full width of container, within padding */
+    max-width: 600px;
     max-height: 250px; /* Set a maximum height for the image */
     object-fit: cover;  /* Ensures the image covers the space without stretching */
     border-radius: 10px;
@@ -225,6 +226,8 @@ a:hover .logo {
 /* Committees Titles */
 .Committees-item h2 {
     color: #F9DC5C; /* Gold title */
+    transform: translate(-50%, 0%); /* Center horizontally */
+    text-align: center;
     font-size: 1.5rem;
     margin-bottom: 10px;
     position: relative;
