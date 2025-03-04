@@ -133,8 +133,6 @@ a:hover .logo {
 }
 
 
-
-
 /* Navbar Styling */
 .navbar {
     background-color: #1B263B; /* Darker blue */
@@ -150,7 +148,10 @@ a:hover .logo {
     .navbar {
         gap: 1vw
     }
-    
+    .logo {
+        width: 0%
+        height: 0%
+    }
 }
 
   
