@@ -15,14 +15,25 @@
             <!-- Background image -->
             <div style="width: 100%; height: 800px; background: url('eyciSite/assets/bgSignUp.jpg') center/cover, rgba(0, 0, 0, 0.5); background-blend-mode: darken;"></div>
 
-            <!-- Navbar positioned on top of the image -->
+            <!-- Navbar -->
             <div class="navbar" style="position: absolute; top: 0; left: 0; width: 100%; background-color: rgba(0, 0, 0, 0); padding: 10px; text-align: center;">
-                <a class="index" href="eyciSite/code/html/index.html" style="color: white; text-decoration: none;">Home</a>
-                <a class="committees" href="eyciSite/code/html/committees.html" style="color: white; text-decoration: none;">Committees</a>
-                <a class="FAQ" href="eyciSite/code/html/FAQ.html" style="color: white; text-decoration: none;">FAQ</a>
-                <a class="active" href="eyciSite/code/html/register.html" style="color: white; text-decoration: none;"><u>Register</u></a>
+                <!-- Navbar links (visible on desktop) -->
+                <a href="eyciSite/code/html/index.html" class="index">Home</a>
+                
+                <a href="eyciSite/code/html/committees.html" class="committees">Committees</a>
+                
+                <a href="eyciSite/code/html/FAQ.html" class="news">FAQ</a>
+                
+                <a href="eyciSite/code/html/register.html" class="active">Register</a>
+                
+                <!-- Hamburger icon for mobile -->
+                <div class="hamburger" onclick="toggleNavbar()">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
-
+            
             <!-- Title positioned on top of the image -->
             <h1 class="title">Registrations open soon!</h1>
         </div>
