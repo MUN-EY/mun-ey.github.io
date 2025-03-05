@@ -129,7 +129,7 @@ body {
     position: absolute;
     top: 10px; /* Fixed position from the top */
     left: 10px; /* Fixed distance from the left edge */
-    min-width: 250px; /* Minimum width of the logo */
+    min-width: 90px; /* Minimum width of the logo */
 }
 
 
@@ -188,7 +188,6 @@ a:hover .logo {
 @media (max-width: 768px) {
     /* Hide navbar links on mobile by default */
     .logo {
-        min-width: 250px;
         top: 10px; /* Place the logo at the top */
         left: 10px; /* Place the logo at the left */
     }
