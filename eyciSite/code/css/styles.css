@@ -164,6 +164,7 @@ a:hover .logo {
     align-items: center;
     padding: 10px 0;
     gap: 4vw; /* Add spacing between buttons */
+    position: absolute
 }
 
 .navbar a {
@@ -182,7 +183,6 @@ a:hover .logo {
     background-color: #778DA9; /* Lighter blue */
     color: #0A1128; /* Dark text on hover */
     transform: scale(1.2); /* Increase size by 50% on hover */
-    position: absolute
 }
 
 
