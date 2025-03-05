@@ -204,15 +204,19 @@ a:hover .logo {
         width: 30px;
         height: 21px;
         cursor: pointer;
-        z-index: 10;
+        position: absolute; /* Position relative to the nearest positioned ancestor */
+        top: 10px;  /* Fixed distance from the top of the screen */
+        right: 10px;  /* Fixed distance from the right edge of the screen */
+        z-index: 10;  /* Ensure it stays above other elements */
     }
-
+    
     .hamburger .bar {
         width: 100%;
         height: 4px;
-        background-color: #F9DC5C;
+        background-color: #F9DC5C;  /* Color of the bars */
         border-radius: 5px;
     }
+
 
     /* Toggle navbar links visibility when the "active" class is added */
     .navbar.active a {
