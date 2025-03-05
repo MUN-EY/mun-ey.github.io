@@ -19,10 +19,18 @@
 
             <!-- Navbar -->
             <div class="navbar" style="position: absolute; top: 0; left: 0; width: 100%; background-color: rgba(0, 0, 0, 0); padding: 10px; text-align: center;">
-                <a class="index" href="eyciSite/code/html/index.html" style="color: white; text-decoration: none;">Home</a>
-                <a class="active" href="eyciSite/code/html/committees.html" style="color: white; text-decoration: none;"><u>Committees</u></a>
-                <a class="news" href="eyciSite/code/html/FAQ.html" style="color: white; text-decoration: none;">FAQ</a>
-                <a class="register" href="eyciSite/code/html/register.html" style="color: white; text-decoration: none;">Register</a>
+                <!-- Navbar links (visible on desktop) -->
+                <a href="eyciSite/code/html/index.html" class="index">Home</a>
+                <a href="eyciSite/code/html/committees.html" class="active">Committees</a>
+                <a href="eyciSite/code/html/FAQ.html" class="news">FAQ</a>
+                <a href="eyciSite/code/html/register.html" class="register">Register</a>
+                
+                <!-- Hamburger icon for mobile -->
+                <div class="hamburger" onclick="toggleNavbar()">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
 
             <!-- Title positioned on top of the image -->
@@ -66,3 +74,12 @@
 
     </body>
 </html>
+
+<script>
+    // JavaScript function to toggle the navbar visibility
+    function toggleNavbar() {
+        const navbar = document.querySelector('.navbar');
+        navbar.classList.toggle('active');
+    }
+</script>
+
