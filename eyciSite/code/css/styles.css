@@ -157,16 +157,21 @@ a:hover .logo {
 
 /* Navbar Styling */
 .navbar {
-    color: #FFFFFF
-    background-color: #1B263B; /* Darker blue */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
-    gap: 4vw; /* Add spacing between buttons */
-    top: 10px;
-    position: absolute;
+    color: #FFFFFF; /* Text color is white */
+    background-color: #1B263B; /* Darker blue background */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the navbar items horizontally */
+    align-items: center; /* Center the navbar items vertically */
+    padding: 10px 0; /* Add vertical padding to the navbar */
+    gap: 4vw; /* Add horizontal space between navbar items */
+    position: fixed; /* Fix navbar at the top of the screen */
+    top: 0; /* Position navbar at the top */
+    left: 50%; /* Position it horizontally centered */
+    transform: translateX(-50%); /* Offset by 50% of the width to center it */
+    width: auto; /* Automatically adjust the width */
+    z-index: 1000; /* Ensure the navbar stays on top of the background */
 }
+
 
 .navbar a {
     color: #FFFFFF; /* Gold */
