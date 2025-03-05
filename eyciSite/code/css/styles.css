@@ -129,7 +129,7 @@ body {
     display: block;
     position: absolute;
     top: 20px; /* Fixed position from the top */
-    left: 50%; /* Horizontally center the logo */
+    left: 20px; /* Horizontally center the logo */
 }
 
 
