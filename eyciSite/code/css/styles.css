@@ -188,6 +188,24 @@ a:hover .logo {
     border-radius: 5px;
 }
 
+/* Default style for larger screens (desktop) */
+.background-image {
+    width: 100%;
+    height: 800px; /* Default height */
+    background: url('eyciSite/assets/bg.jpg') center/cover, rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* Media query for mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .background-image {
+        height: 50vh; /* Adjust height to 50% of the viewport height for mobile */
+    }
+}
+
+
 @media (max-width: 768px) {
     /* Hide navbar links on mobile by default */
     .logo {
@@ -209,7 +227,7 @@ a:hover .logo {
         cursor: pointer;
         position: absolute; /* Position relative to the nearest positioned ancestor */
         top: 20px;  /* Fixed distance from the top of the screen */
-        right: 40px;  /* Fixed distance from the right edge of the screen */
+        right: 20px;  /* Fixed distance from the right edge of the screen */
         z-index: 10;  /* Ensure it stays above other elements */
     }
     
