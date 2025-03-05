@@ -123,13 +123,13 @@ body {
 /* Logo  */
 .logo {
     transition: transform 0.3s ease; /* Smooth transition for scaling */
-    width: 8vw; /* The logo width will be 15% of the viewport width */
+    min_width: 70px;
+    width: 3vw; /* The logo width will be 15% of the viewport width */
     height: auto; /* Maintain aspect ratio */
     display: block;
     position: absolute;
     top: 20px; /* Fixed position from the top */
     left: 50%; /* Horizontally center the logo */
-    transform: translateX(-50%); /* Adjust to ensure it's exactly centered */
 }
 
 
@@ -187,6 +187,11 @@ a:hover .logo {
 
 @media (max-width: 768px) {
     /* Hide navbar links on mobile by default */
+    .logo {
+        top: 0; /* Place the logo at the top */
+        left: 0; /* Place the logo at the left */
+    }
+    
     .navbar a {
         display: none;
     }
