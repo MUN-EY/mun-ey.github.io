@@ -200,7 +200,6 @@ a:hover .logo {
         gap: 4vw; /* Add horizontal space between navbar items */
         position: fixed; /* Fix navbar at the top of the screen */
         top: 0; /* Position navbar at the top */
-        left: 50%; /* Position it horizontally centered */
         width: auto; /* Automatically adjust the width */
         z-index: 1000; /* Ensure the navbar stays on top of the background */
     }
