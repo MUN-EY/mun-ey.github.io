@@ -143,7 +143,7 @@ a:hover .logo {
     gap: 10vw; /* Add spacing between buttons */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 7680000px) {
     .navbar {
         gap: 2vw; /* Reduce spacing between buttons */
     }
