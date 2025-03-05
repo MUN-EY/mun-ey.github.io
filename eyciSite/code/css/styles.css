@@ -163,7 +163,7 @@ a:hover .logo {
     align-items: center; /* Center the navbar items vertically */
     padding: 10px 0; /* Add vertical padding to the navbar */
     gap: 4vw; /* Add horizontal space between navbar items */
-    position: fixed; /* Fix navbar at the top of the screen */
+    position: absolute; /* Fix navbar at the top of the screen */
     top: 0; /* Position navbar at the top */
     left: 50%; /* Position it horizontally centered */
     transform: translateX(-50%); /* Offset by 50% of the width to center it */
