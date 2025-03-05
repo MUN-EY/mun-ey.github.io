@@ -16,7 +16,7 @@ body {
 }
 
 /* Media query for mobile devices (max-width: 768px) */
-@media (max-width: 768px) {
+@media (max-width: 1170px) {
     .background-image {
         height: 50vh;  /* Adjust height to 50% of the viewport height for mobile */
     }
@@ -189,7 +189,7 @@ a:hover .logo {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1170px) {
     /* Hamburger menu styling */
     .navbar {
         position: unset;
