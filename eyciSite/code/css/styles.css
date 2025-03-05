@@ -13,7 +13,6 @@ body {
     background-size: cover;  /* Ensures the background covers the area */
     background-position: center center;  /* Centers the image */
     background-blend-mode: darken;  /* Applies a darkening effect */
-    position: absolute
 }
 
 /* Media query for mobile devices (max-width: 768px) */
