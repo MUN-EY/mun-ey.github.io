@@ -158,7 +158,6 @@ a:hover .logo {
 /* Navbar Styling */
 .navbar {
     color: #FFFFFF; /* Text color is white */
-    background-color: #1B263B; /* Darker blue background */
     display: flex; /* Use flexbox for alignment */
     justify-content: center; /* Center the navbar items horizontally */
     align-items: center; /* Center the navbar items vertically */
@@ -171,7 +170,6 @@ a:hover .logo {
     width: auto; /* Automatically adjust the width */
     z-index: 1000; /* Ensure the navbar stays on top of the background */
 }
-
 
 .navbar a {
     color: #FFFFFF; /* Gold */
@@ -191,28 +189,30 @@ a:hover .logo {
 }
 
 
-/* Hamburger menu styling */
-.hamburger {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 50px;
-        height: 40px;
-        cursor: pointer;
-        position: absolute;
-        top: 25px;
-        right: 40px;
-        z-index: 10;
-}
-
-.hamburger .bar {
-    width: 100%;
-    height: 4px;
-    background-color: #F9DC5C;
-    border-radius: 5px;
-}
-
 @media (max-width: 768px) {
+
+    
+    /* Hamburger menu styling */
+    .hamburger {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 50px;
+            height: 40px;
+            cursor: pointer;
+            position: absolute;
+            top: 25px;
+            right: 40px;
+            z-index: 10;
+    }
+    
+    .hamburger .bar {
+        width: 100%;
+        height: 4px;
+        background-color: #F9DC5C;
+        border-radius: 5px;
+    }
+
     /* Hide navbar links on mobile by default */
     .logo {
         top: 10px; /* Place the logo at the top */
