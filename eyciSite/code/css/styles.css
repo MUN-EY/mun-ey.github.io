@@ -6,6 +6,14 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Default style for larger screens (desktop) */
+.background-image {
+    width: 100%;
+    height: 800px; /* Default height */
+    background-size: cover;
+    background-position: center center;
+}
+
 /* Title letter hover effect */
 .title span {
     position: relative;
@@ -186,14 +194,6 @@ a:hover .logo {
     height: 4px;
     background-color: #F9DC5C;
     border-radius: 5px;
-}
-
-/* Default style for larger screens (desktop) */
-.background-image {
-    width: 100%;
-    height: 800px; /* Default height */
-    background-size: cover;
-    background-position: center center;
 }
 
 /* Media query for mobile devices (max-width: 768px) */
