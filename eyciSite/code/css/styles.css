@@ -135,6 +135,7 @@ a:hover .logo {
 
 /* Navbar Styling */
 .navbar {
+    color: #FFFFFF
     background-color: #1B263B; /* Darker blue */
     display: flex;
     justify-content: center;
@@ -143,18 +144,8 @@ a:hover .logo {
     gap: 10vw; /* Add spacing between buttons */
 }
 
-/* Default navbar (for larger screens) */
-.navbar {
-    background-color: #1B263B;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
-    gap: 10vw; /* Spacing between buttons */
-}
-
 .navbar a {
-    color: #F9DC5C; /* Gold */
+    color: #FFFFFF; /* Gold */
     text-align: center;
     margin-top: 30px;
     padding: 10px 30px;
