@@ -60,10 +60,11 @@ body {
     left: 50%; /* Ensure it's horizontally centered */
     transform: translate(-50%, -80%); /* Center horizontally, move 80% up vertically */
     text-align: center;
-    font-size: 13vw; /* Adjust font size based on viewport width */
+    font-size: 20vh; /* Adjust font size based on viewport width */
     color: white;
     line-height: 1.2;
     cursor: default;
+    width: 90rem;
 }
 
 
@@ -177,7 +178,7 @@ a:hover .logo {
     margin-top: 30px;
     padding: 10px 30px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.3vw;
     transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Add transition for scaling */
     background-color: #00000000; /* Default button color */
 }
@@ -189,7 +190,8 @@ a:hover .logo {
 }
 
 
-@media (max-width: 1170px) {
+/* Mobile site */
+@media screen and (max-width: 1170px) {
     /* Hamburger menu styling */
     .navbar {
         position: unset;
@@ -246,6 +248,10 @@ a:hover .logo {
         width: 100%;
         padding: 20px;
         font-size: 22px;
+    }
+
+    .title {
+        font-size: 15rem;
     }
 }
 
