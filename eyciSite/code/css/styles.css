@@ -13,6 +13,7 @@ body {
     background-size: cover;  /* Ensures the background covers the area */
     background-position: center center;  /* Centers the image */
     background-blend-mode: darken;  /* Applies a darkening effect */
+    position: absolute
 }
 
 /* Media query for mobile devices (max-width: 768px) */
@@ -175,12 +176,14 @@ a:hover .logo {
     font-size: 18px;
     transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Add transition for scaling */
     background-color: #00000000; /* Default button color */
+    position: absolute
 }
 
 .navbar a:hover {
     background-color: #778DA9; /* Lighter blue */
     color: #0A1128; /* Dark text on hover */
     transform: scale(1.2); /* Increase size by 50% on hover */
+    position: absolute
 }
 
 
