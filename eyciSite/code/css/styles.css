@@ -303,11 +303,12 @@ a:hover .logo {
 
 /* Headings & Paragraphs (optional custom styling) */
 .committee-content h2 {
-  font-size: 1.5rem;
+  font-size: 3rem;
   margin-bottom: 10px;
 }
 
 .committee-content p {
+  font-size: 1.5rem;
   line-height: 1.6;
   margin-bottom: 1em;
   word-break: break-word; /* Allows breaking in the middle of words */
