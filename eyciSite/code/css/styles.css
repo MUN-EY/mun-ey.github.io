@@ -164,6 +164,8 @@ a:hover .logo {
     align-items: center;
     padding: 10px 0;
     gap: 4vw; /* Add spacing between buttons */
+    top: 10px;
+    position: absolute;
 }
 
 .navbar a {
