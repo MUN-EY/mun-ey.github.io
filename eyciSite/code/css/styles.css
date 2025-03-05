@@ -153,24 +153,6 @@ a:hover .logo {
     gap: 10vw; /* Spacing between buttons */
 }
 
-/* Mobile styles */
-@media (max-width: 768px) {
-    .navbar {
-        gap: 2vw; /* Reduce spacing between buttons */
-    }
-
-    .navbar a {
-        font-size: 22px;  /* Increase font size */
-        padding: 15px 30px; /* Adjust padding */
-    }
-
-    .logo {
-        display: none; /* Hide the logo on smaller screens */
-    }
-}
-
-
-  
 .navbar a {
     color: #F9DC5C; /* Gold */
     text-align: center;
@@ -188,6 +170,57 @@ a:hover .logo {
     transform: scale(1.2); /* Increase size by 50% on hover */
 }
 
+
+/* Hamburger menu styling */
+.hamburger {
+    display: none; /* Hide the hamburger menu by default */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.hamburger .bar {
+    width: 100%;
+    height: 4px;
+    background-color: #F9DC5C;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    /* Hide navbar links on mobile by default */
+    .navbar a {
+        display: none;
+    }
+
+    /* Display hamburger menu on mobile */
+    .hamburger {
+        display: flex;
+    }
+
+    /* Toggle navbar links visibility when the "active" class is added */
+    .navbar.active a {
+        display: block;
+    }
+
+    /* Navbar links container in a column */
+    .navbar.active {
+        position: absolute;
+        top: 60px; /* Adjust the distance from the top */
+        left: 0;
+        width: 100%;
+        background-color: #1B263B; /* Dark blue */
+        text-align: center;
+    }
+
+    .navbar.active a {
+        padding: 20px;
+        font-size: 22px; /* Adjust font size for mobile */
+        display: block;
+    }
+}
 /* No scaling effect for active pag
 
 /* Description Styling */
