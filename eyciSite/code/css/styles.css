@@ -143,18 +143,59 @@ a:hover .logo {
     gap: 10vw; /* Add spacing between buttons */
 }
 
+/* Default navbar (for larger screens) */
+.navbar {
+    background-color: #1B263B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    gap: 10vw; /* Spacing between buttons */
+}
+
+/* Mobile styles */
 @media (max-width: 768px) {
     .navbar {
-        gap: 2vw; /* Reduce spacing between buttons */
+        justify-content: space-between; /* Space out logo & menu */
+        padding: 10px 20px;
     }
 
-    .navbar a {
-        font-size: 22px;  /* Increase font size */
-        padding: 15px 30px; /* Adjust padding */
+    .menu-icon {
+        display: block; /* Show hamburger menu */
+        font-size: 30px;
+        cursor: pointer;
+        color: #F9DC5C;
     }
 
-    .logo {
-        display: none; /* Hide the logo on smaller screens */
+    .nav-links {
+        display: none; /* Hide navbar links initially */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #1B263B;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        padding: 10px 0;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 15px;
+        color: #F9DC5C;
+        text-decoration: none;
+        font-size: 20px;
+        transition: background 0.3s;
+    }
+
+    .nav-links a:hover {
+        background: #778DA9;
+        color: #0A1128;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show menu when active */
     }
 }
 
