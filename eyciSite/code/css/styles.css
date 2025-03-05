@@ -141,7 +141,7 @@ a:hover .logo {
     justify-content: center;
     align-items: center;
     padding: 10px 0;
-    gap: 10vw; /* Add spacing between buttons */
+    gap: 4vw; /* Add spacing between buttons */
 }
 
 .navbar a {
