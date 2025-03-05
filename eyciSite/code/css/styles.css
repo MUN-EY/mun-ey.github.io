@@ -192,6 +192,7 @@ a:hover .logo {
 @media (max-width: 768px) {
     /* Hamburger menu styling */
     .navbar {
+        position: unset;
         transform: none; /* Remove the horizontal centering */
     }
     .hamburger {
