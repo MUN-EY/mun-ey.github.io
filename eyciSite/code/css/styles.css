@@ -124,12 +124,12 @@ body {
 .logo {
     transition: transform 0.3s ease; /* Smooth transition for scaling */
     min_width: 70px;
-    width: 6vw; /* The logo width will be 15% of the viewport width */
+    width: 8vw; /* The logo width will be 15% of the viewport width */
     height: auto; /* Maintain aspect ratio */
     display: block;
     position: absolute;
-    top: 20px; /* Fixed position from the top */
-    left: 20px; /* Horizontally center the logo */
+    top: 0px; /* Fixed position from the top */
+    left: -20px; /* Horizontally center the logo */
 }
 
 
