@@ -1,0 +1,281 @@
+body {
+    background-color: #ffffff;
+    color: #F4FFFD;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Default style for larger screens (desktop) */
+.background-image {
+    width: 100%;
+    height: 80vh;  /* Full viewport height */
+    background-size: cover;  /* Ensures the background covers the area */
+    background-position: center center;  /* Centers the image */
+    background-blend-mode: darken;  /* Applies a darkening effect */
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%; /* Ensure it's horizontally centered */
+    transform: translate(-50%, -80%); /* Center horizontally, move 80% up vertically */
+    text-align: center;
+    font-size: 8rem; /* Adjust font size based on viewport height */
+    color: white;
+    line-height: 1.2;
+    cursor: default;
+    width: 90%;
+    margin-top: 10vh;
+}
+
+/* Specific letter colors */
+.gold {
+    color: rgb(201, 154, 0);
+}
+
+.blue {
+    color: blue;
+}
+
+/* Logo  */
+.logo {
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+    width: 7vw; /* The logo width will be 7% of the viewport width */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    position: absolute;
+    top: 10px; /* Fixed position from the top */
+    left: 10px; /* Fixed distance from the left edge */
+}
+
+a:hover .logo {
+    transform: scale(1.5); /* Scale the image to 150% of its original size */
+}
+
+/* Navbar Styling */
+.navbar {
+    color: #FFFFFF; /* Text color is white */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the navbar items horizontally */
+    align-items: center; /* Center the navbar items vertically */
+    padding: 10px 0; /* Add vertical padding to the navbar */
+    gap: 4vw; /* Add horizontal space between navbar items */
+    position: absolute; /* Fix navbar at the top of the screen */
+    top: 0; /* Position navbar at the top */
+    left: 50%; /* Position it horizontally centered */
+    transform: translateX(-50%); /* Offset by 50% of the width to center it */
+    width: auto; /* Automatically adjust the width */
+    z-index: 1000; /* Ensure the navbar stays on top of the background */
+}
+
+.navbar a {
+    color: #FFFFFF; /* Gold */
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 1.3vw;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Add transition for scaling */
+    background-color: #00000000; /* Default button color */
+}
+
+.navbar a:hover {
+    background-color: #778DA9; /* Lighter blue */
+    color: #0A1128; /* Dark text on hover */
+    transform: scale(1.2); /* Increase size by 50% on hover */
+}
+
+/* Description Styling */
+.description {
+    text-align: center;
+    font-size: 1.2rem;
+    max-width: 80%;
+    margin: 40px auto; /* Increased margin to add space */
+    background: #1B263B;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.Committees-container {
+    width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+    background: #2f3a4e; /* Dark blue background for the container */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;  /* Stack news items vertically */
+    gap: 20px; /* Add space between the news items */
+    
+}
+
+.committee-item {
+    background: #506174; /* Slightly lighter blue for items */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;             /* Puts image and text side by side */
+    align-items: flex-start;   /* Align them at the top (or center if you prefer) */
+    gap: 20px;                 /* Space between image and text */
+    margin: 20px 0;            /* Some vertical spacing between committee items */
+}
+
+/* Image styling */
+.committee-img {
+  width: 30%;              /* Set width to 30% of the container */         /* Maintain aspect ratio */
+  height: 100%;        /* Ensure image doesn't exceed container height */
+  border: 2px solid #ccc; /* Optional border */
+  border-radius: 5px;      /* Rounded corners (optional) */
+  object-fit: cover;       /* Crop image if aspect ratio differs */
+}
+
+
+/* Text Container */
+.committee-content {
+  flex: 1;                   /* Allow the text to take remaining space */
+}
+
+/* Headings & Paragraphs (optional custom styling) */
+.committee-content h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.committee-content p {
+  line-height: 1.6;
+  margin-bottom: 1em;
+  word-break: break-word; /* Allows breaking in the middle of words */
+  hyphens: auto; /* Adds a hyphen where words break */
+}
+
+.register-item {
+    background: #506174; /* Slightly lighter blue */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    flex-basis: 300%; /* Take up 30% of the container width */
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack image, title, and text vertically */
+    justify-content: flex-start; /* Ensure content stays at the top */
+    position: relative;
+    overflow: hidden; /* Hide overflow if text exceeds */
+}
+
+.more-content {
+    display: none;
+}
+
+/* Tablet site */
+@media screen and (max-width: 1024px) {
+    .title {
+        font-size: 8rem;
+    }
+
+    .navbar a {
+        font-size: 1rem;
+    }
+
+    .logo {
+        width: 10vw;
+    }
+}
+
+/* Mobile site */
+@media screen and (max-width: 599px) {
+    /* Hamburger menu styling */
+    .navbar {
+        position: unset;
+        transform: none; /* Remove the horizontal centering */
+    }
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 20vw;
+        height: 7vh;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1001; /* Ensures it stays above the navbar */
+    }
+
+    .hamburger .bar {
+        width: 100%;
+        height: 4px;
+        background-color: #F9DC5C;
+        border-radius: 5px;
+    }
+
+    /* Hide navbar links on mobile by default */
+    .logo {
+        top: 10px;
+        left: 10px;
+        width: 23vw;
+    }
+    
+    .navbar a {
+        display: none;
+    }
+
+    /* Fixed full-screen navbar when active */
+    .navbar.active {
+        position: fixed; /* Stays on top of everything */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80vh; /* Covers the full screen */
+        background-color: #1B263B;
+        text-align: center;
+        flex-direction: column;
+        z-index: 1000; /* Ensures it's in front */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar.active a {
+        display: block;
+        width: 100%;
+        padding: 20px;
+        font-size: 22px;
+    }
+
+    .title {
+        font-size: 3.5rem;
+        margin-top: 5vh;
+    }
+
+    .background-image {
+        height: 50vh;  /* Adjust height to 50% of the viewport height for mobile */
+    }
+
+    .committee-item {
+        display: block;
+    }
+
+    .committee-content h2 {
+        font-size: 3rem;
+    }
+    .committee-content p {
+        font-size: 1.5rem;
+    }
+
+    /* Image styling */
+    .committee-img {
+        width: 100%;              /* Set width to 30% of the container */         /* Maintain aspect ratio */
+        border: 2px solid #ccc; /* Optional border */
+        border-radius: 5px;      /* Rounded corners (optional) */
+        object-fit: cover;       /* Crop image if aspect ratio differs */
+    }
+    
+    /* Text Container */
+    .committee-content {
+        margin-top: 10%;
+    }
+}

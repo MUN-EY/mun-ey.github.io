@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <base href="/">
-        <link rel="stylesheet" href="eyciSite/code/css/styles.css" />
+        <link rel="stylesheet" href="eyciSite/code/css/committees.css" />
     </head>
     <body>
         <!-- Image container with relative positioning -->
@@ -41,8 +42,11 @@
                 
                 <div class="committee-content">
                     <h2>Marvel</h2>
-                    <p class="short-text" data-fulltext="This committee will explore the political dynamics within the Marvel Universe, challenging delegates to navigate superhero regulations, Sokovia Accords, and intergalactic diplomacy. This committee will explore the political dynamics within the Marvel Universe, challenging delegates to navigate superhero regulations, Sokovia Accords, and intergalactic diplomacy. This committee will explore the political dynamics within the Marvel Universe, challenging delegates to navigate superhero regulations, Sokovia Accords, and intergalactic diplomacy. This committee will explore the political dynamics within the Marvel Universe, challenging delegates to navigate superhero regulations, Sokovia Accords, and intergalactic diplomacy. This committee will explore the political dynamics within the Marvel Universe, challenging delegates to navigate superhero regulations, Sokovia Accords, and intergalactic diplomacy. This committee will explore the political dynamics within the Marvel Universe, challenging delegates to navigate superhero regulations, Sokovia Accords, and intergalactic diplomacy. This committee will explore the political dynamics within the Marvel Universe, challenging delegates to navigate superhero regulations, Sokovia Accords, and intergalactic diplomacy. This committee will explore the political dynamics within the Marvel Universe, challenging delegates to navigate superhero regulations, Sokovia Accords, and intergalactic diplomacy. This committee will explore the political dynamics within the Marvel Universe, challenging delegates to navigate superhero regulations, Sokovia Accords, and intergalactic diplomacy. This committee will explore the political dynamics within the Marvel Universe, challenging delegates to navigate superhero regulations, Sokovia Accords, and intergalactic diplomacy. This committee will explore the political dynamics within the Marvel Universe, challenging delegates to navigate superhero regulations, Sokovia Accords, and intergalactic diplomacy.">
+                    <p class="short-text">
                         This committee will explore the political...
+                    </p>
+                    <p class="more-content">
+                        This committee will explore the political dynamics within the Marvel Universe, challenging delegates to navigate superhero regulations, Sokovia Accords, and intergalactic diplomacy. This committee will explore the political dynamics within the Marvel Universe, challenging delegates to navigate superhero regulations, Sokovia Accords, and intergalactic diplomacy. This committee will explore the political dynamics within the Marvel Universe, challenging delegates to navigate superhero regulations, Sokovia Accords, and intergalactic diplomacy. This committee will explore the political dynamics within the Marvel Universe, challenging delegates to navigate superhero regulations, Sokovia Accords, and intergalactic diplomacy. This committee will explore the political dynamics within the Marvel Universe, challenging delegates to navigate superhero regulations, Sokovia Accords, and intergalactic diplomacy. This committee will explore the political dynamics within the Marvel Universe, challenging delegates to navigate superhero regulations, Sokovia Accords, and intergalactic diplomacy. This committee will explore the political dynamics within the Marvel Universe, challenging delegates to navigate superhero regulations, Sokovia Accords, and intergalactic diplomacy. This committee will explore the political dynamics within the Marvel Universe, challenging delegates to navigate superhero regulations, Sokovia Accords, and intergalactic diplomacy. This committee will explore the political dynamics within the Marvel Universe, challenging delegates to navigate superhero regulations, Sokovia Accords, and intergalactic diplomacy. This committee will explore the political dynamics within the Marvel Universe, challenging delegates to navigate superhero regulations, Sokovia Accords, and intergalactic diplomacy. This committee will explore the political dynamics within the Marvel Universe, challenging delegates to navigate superhero regulations, Sokovia Accords, and intergalactic diplomacy.
                     </p>
                     <button class="read-more-btn">Read More</button>
                 </div>
@@ -53,8 +57,11 @@
                 
                 <div class="committee-content">
                     <h2>Roman Civil War</h2>
-                    <p class="short-text" data-fulltext="Step into the political and military turmoil of the late Roman Republic. Delegates will assume roles of key historical figures, negotiating alliances and waging strategic battles.">
+                    <p class="short-text">
                         Step into the political and military...
+                    </p>
+                    <p class="more-content">
+                        Step into the political and military turmoil of the late Roman Republic. Delegates will assume roles of key historical figures, negotiating alliances and waging strategic battles.
                     </p>
                     <button class="read-more-btn">Read More</button>
                 </div>
@@ -65,8 +72,11 @@
                 
                 <div class="committee-content">
                     <h2>Tariffs</h2>
-                    <p class="short-text" data-fulltext="Economic tensions rise as countries debate international tariffs and trade restrictions. Delegates must balance national interests with global economic stability.">
+                    <p class="short-text">
                         Economic tensions rise as countries...
+                    </p>
+                    <p class="more-content">
+                        Economic tensions rise as countries debate international tariffs and trade restrictions. Delegates must balance national interests with global economic stability.
                     </p>
                     <button class="read-more-btn">Read More</button>
                 </div>
@@ -74,25 +84,8 @@
 
         </div>
         <hr style="border: 1px solid #2f3a4e77; margin: 20px 0;">
+
+        <script type="text/javascript" src="eyciSite/code/javascript/index.js"></script>
+        <script type="text/javascript" src="eyciSite/code/javascript/committees.js"></script>
     </body>
 </html>
-
-<script>
-    function toggleNavbar() {
-        const navbar = document.querySelector('.navbar');
-        navbar.classList.toggle('active');
-    }
-
-    document.querySelectorAll(".read-more-btn").forEach(button => {
-        button.addEventListener("click", function () {
-            const textElement = this.previousElementSibling;
-            if (this.innerText === "Read More") {
-                textElement.innerText = textElement.getAttribute("data-fulltext");
-                this.innerText = "Read Less";
-            } else {
-                textElement.innerText = textElement.getAttribute("data-fulltext").slice(0, 40) + "...";
-                this.innerText = "Read More";
-            }
-        });
-    });
-</script>
