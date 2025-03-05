@@ -188,8 +188,8 @@ a:hover .logo {
 @media (max-width: 768px) {
     /* Hide navbar links on mobile by default */
     .logo {
-        top: 0; /* Place the logo at the top */
-        left: 0; /* Place the logo at the left */
+        top: 10px; /* Place the logo at the top */
+        left: 10px; /* Place the logo at the left */
     }
     
     .navbar a {
