@@ -129,7 +129,7 @@ body {
     position: absolute;
     top: 10px; /* Fixed position from the top */
     left: 10px; /* Fixed distance from the left edge */
-    min-width: 90px; /* Minimum width of the logo */
+    min-width: 70px; /* Minimum width of the logo */
 }
 
 
@@ -169,13 +169,16 @@ a:hover .logo {
 
 /* Hamburger menu styling */
 .hamburger {
-    display: none; /* Hide the hamburger menu by default */
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-    cursor: pointer;
-    z-index: 10;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50px;
+        height: 40px;
+        cursor: pointer;
+        position: absolute;
+        top: 25px;
+        right: 40px;
+        z-index: 10;
 }
 
 .hamburger .bar {
