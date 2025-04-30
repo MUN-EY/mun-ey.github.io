@@ -209,19 +209,22 @@ a:hover .logo {
     position: relative;
     overflow: hidden; /* Hide overflow if text exceeds */
 }
-.image-container {
+  .image-container {
     display: flex;
     gap: 10px;
     align-items: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
-}
+    max-width: 90vw;       /* limits container width */
+    margin: 0 auto;        /* centers the container horizontally */
+  }
 
-.image-container img {
+  .image-container img {
     width: 40vw;
     height: auto;
-}
+  }
 
-@media (max-width: 600px) {
+  @media (max-width: 600px) {
     .image-container {
       flex-direction: column;
       align-items: center;
