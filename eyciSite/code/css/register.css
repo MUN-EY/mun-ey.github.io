@@ -209,7 +209,28 @@ a:hover .logo {
     position: relative;
     overflow: hidden; /* Hide overflow if text exceeds */
 }
+.image-container {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
 
+.image-container img {
+    width: 40vw;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .image-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .image-container img {
+      width: 90vw;
+    }
+  }
 
 /* Tablet site */
 @media screen and (max-width: 1024px) {
