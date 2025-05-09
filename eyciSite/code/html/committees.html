@@ -1,131 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <base href="/">
-    <link rel="stylesheet" href="eyciSite/code/css/committees.css" />
-    <style>
-        .more-content { display: none; }
-        .more-content.show { display: block; }
-    </style>
-</head>
-<body>
-    <div style="position: relative;">
-        <a href="eyciSite/code/html/index.html">
-            <img src="eyciSite/assets/MuneyLogoNoBg.png" alt="MUNey Logo without background" class="logo">
-        </a>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <base href="/">
+        <link rel="stylesheet" href="eyciSite/code/css/committees.css" />
+    </head>
+    <body>
+        <!-- Image container with relative positioning -->
+        <div style="position: relative;">
+            <a href="eyciSite/code/html/index.html">
+                <img src="eyciSite/assets/MuneyLogoNoBg.png" alt="MUNey Logo" class="logo">
+            </a>
 
-        <div class="background-image" style="background: url('eyciSite/assets/bgCommittees.jpg') center/cover, rgba(0, 0, 0, 0.5); background-blend-mode: darken;"></div>
+            <!-- Background image -->
+            <div class="background-image" style="background: url('eyciSite/assets/bgCommittees.jpg') center/cover, rgba(0, 0, 0, 0.5); background-blend-mode: darken;"></div>
 
-        <div class="navbar">
-            <a href="eyciSite/code/html/index.html" class="active">Home</a>
-            <a href="eyciSite/code/html/committees.html" class="committees">Committees</a>
-            <a href="eyciSite/code/html/FAQ.html" class="news">FAQ</a>
-            <a href="eyciSite/code/html/register.html" class="register">Register</a>
+            <!-- Navbar -->
+            <div class="navbar">
+                <a href="eyciSite/code/html/index.html" class="active">Home</a>
+                <a href="eyciSite/code/html/committees.html" class="committees">Committees</a>
+                <a href="eyciSite/code/html/FAQ.html" class="news">FAQ</a>
+                <a href="eyciSite/code/html/register.html" class="register">Register</a>
 
-            <div class="hamburger" onclick="toggleNavbar()" aria-label="Toggle navigation menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+                <!-- Hamburger icon for mobile -->
+                <div class="hamburger" onclick="toggleNavbar()">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
+
+            <!-- Title -->
+            <h1 class="title">Committees</h1>
         </div>
 
-        <h1 class="title">Committees</h1>
-    </div>
-
-    <div class="Committees-container">
-
-        <!-- Marvel Committee -->
-        <div class="committee-item">
-            <img src="eyciSite/assets/marvel.jpg" alt="Marvel Cinematic Universe committee banner" class="committee-img"/>
-            <div class="committee-content">
-                <h2>Marvel Cinematic Universe</h2>
-                <p class="short-text">
-                    Set in the dystopian world of the MCU, delegates explore AI, accountability, and power abuse...
-                </p>
-                <p class="more-content">
-                    This committee will explore the themes of AI, accountability, and abuse of power. The focus will be on <em>Protocol for the use of AI by the Avengers</em> after the events of <em>Age of Ultron</em>. It will also debate <em>The Future of the Avengers</em> — questioning whether the Avengers' actions are justified or abusive, and if they should be reformed or disbanded.<br><br>
-                    <strong>Topic 1:</strong> Protocol for the use of AI by the Avengers. <br>
-                    <strong>Topic 2:</strong> The Future of the Avengers. <br><br>
-                    <strong><a href="https://docs.google.com/document/d/17bNywQZmkNAFb2yWfSTuzJ93pfTeivlJm89IArypRxw/edit?usp=sharing" class="active">BACKGROUND GUIDE</a></strong><br>
-                    <em>Roles:</em>
-                    <ul>
-                        <li>Hawkeye</li><li>Captain America</li><li>Black Widow</li>
-                        <li>Iron Man</li><li>King T’Challa</li><li>Sokovia Leader</li>
-                        <li>President Matthew Ellis</li><li>Wanda Maximoff</li>
-                        <li>Hulk</li><li>Thor</li>
-                    </ul>
-                </p>
-                <button class="read-more-btn">Read More</button>
+        <!-- Committees Section -->
+        <div class="Committees-container">
+            
+            <div class="committee-item">
+                <img src="eyciSite/assets/marvel.jpg" alt="Committee Image" class="committee-img"/>
+                
+                <div class="committee-content">
+                    <h2>Marvel Cinematic Universe</h2>
+                    <p class="short-text">
+                        Marvel Cinematic Universe Set in the dystopian world of the Marvel Cinematic Universe (MCU)
+                    </p>
+                    <p class="more-content">
+                        Marvel Cinematic Universe Set in the dystopian world of the Marvel Cinematic Universe (MCU), this committee will explore the themes of AI, accountability, and abuse of power. The focus will be on <em>Protocol for the use of AI by the Avengers</em> after the events of <em>Age of Ultron</em>. Additionally, this committee will debate <em>The Future of the Avengers</em>, questioning whether it is an abuse of power and if the Avengers should be reformed or abolished in the face of the disaster left in their wake. <br><br> <strong>Topic 1:</strong> Protocol for the use of AI by the Avengers. <br> <strong>Topic 2:</strong> The Future of the Avengers. <br><br> <strong><a href="https://docs.google.com/document/d/17bNywQZmkNAFb2yWfSTuzJ93pfTeivlJm89IArypRxw/edit?usp=sharing" class="active">BACKGROUND GUIDE</a></strong>
+                    </p>
+                    <button class="read-more-btn">Read More</button>
+                </div>
             </div>
-        </div>
 
-        <!-- Cold War Committee -->
-        <div class="committee-item">
-            <img src="eyciSite/assets/coldWar.jpg" alt="Cold War committee banner" class="committee-img"/>
-            <div class="committee-content">
-                <h2>Cold War</h2>
-                <p class="short-text">
-                    Delegates tackle the arms race and Iron Curtain tensions in a high-stakes global Cold War simulation...
-                </p>
-                <p class="more-content">
-                    This Cold War committee covers the <em>Nuclear Arms Race</em> and <em>Iron Curtain</em> divisions. Delegates will handle tense alliances, proxy wars, and nuclear brinkmanship — weighing diplomacy against national interests.<br><br>
-                    <strong>Topic 1:</strong> The Nuclear Arms Race <br>
-                    <strong>Topic 2:</strong> The Iron Curtain <br><br>
-                    <strong><a href="https://docs.google.com/document/d/1sRZ7ra9QT4eJvf9HSpns6e8SAogGESKwxxtLgl09nIU/edit?usp=sharing" class="active">BACKGROUND GUIDE</a></strong><br>
-                    <em>Roles:</em>
-                    <ul>
-                        <li>Fidel Castro</li><li>George C. Marshall</li><li>Joseph Stalin</li>
-                        <li>Jawaharlal Nehru</li><li>Charles de Gaulle</li><li>John F. Kennedy</li>
-                        <li>W.L. Mackenzie King</li><li>Erich Honecker</li>
-                        <li>Winston Churchill</li><li>Nikita Khrushchev</li>
-                        <li>Alfred M. Gruenther</li>
-                    </ul>
-                </p>
-                <button class="read-more-btn">Read More</button>
+            <div class="committee-item">
+                <img src="eyciSite/assets/coldWar.jpg" alt="Committee Image" class="committee-img" />
+                
+                <div class="committee-content">
+                    <h2>Cold War</h2>
+                    <p class="short-text">
+                        In this Cold War Model UN committee, delegates will address the escalating arms race and the political divide created by the Iron Curtain...
+                    </p>
+                    <p class="more-content">
+                        In this Cold War Model UN committee, delegates will address the escalating arms race and the political divide created by the Iron Curtain. The focus will be on the <em>Nuclear Arms</em> Race as it brings global security to the brink, while the <em>Iron Curtain</em> shapes diplomatic relations between East and West. Delegates will navigate tense alliances, proxy wars, and the threat of nuclear conflict. The committee will challenge participants to balance national interests with the need for diplomacy and peace. It’s a high-stakes environment where every decision could shift the course of history. <br><br> <strong>Topic 1:</strong> The Nuclear Arms Race <br> <strong>Topic 2:</strong> The Iron Curtain <br><br> <strong><a href="https://docs.google.com/document/d/1sRZ7ra9QT4eJvf9HSpns6e8SAogGESKwxxtLgl09nIU/edit?usp=sharing" class="active">BACKGROUND GUIDE</a></strong>
+                    </p>
+                    <button class="read-more-btn">Read More</button>
+                </div>
             </div>
-        </div>
 
-        <!-- Tariffs Committee -->
-        <div class="committee-item">
-            <img src="eyciSite/assets/tariffs.jpg" alt="Trade and Tariffs committee banner" class="committee-img"/>
-            <div class="committee-content">
-                <h2>Tariffs</h2>
-                <p class="short-text">
-                    Donald Trump’s proposed tariffs spark a global debate on trade stability and economic warfare...
-                </p>
-                <p class="more-content">
-                    As President Trump threatens global tariffs and announces plans to annex Greenland, this committee explores economic disruption, international cooperation, and looming war.<br><br>
-                    <strong>Topic 1:</strong> U.S. global tariffs at 25%<br>
-                    <strong>Topic 2:</strong> U.S. annexation of Greenland<br><br>
-                    <strong><a href="https://docs.google.com/document/d/1Ew6aK4hRppMA8k0dRhwzX2Ov1yuZHd9wFkiNU1paSxk/edit?usp=sharing" class="active">BACKGROUND GUIDE</a></strong><br>
-                    <em>Countries:</em>
-                    <ul>
-                        <li>South Korea</li><li>France</li><li>Mexico</li><li>Greenland</li>
-                        <li>United States</li><li>Canada</li><li>India</li>
-                        <li>Denmark</li><li>China</li>
-                    </ul>
-                </p>
-                <button class="read-more-btn">Read More</button>
+            <div class="committee-item">
+                <img src="eyciSite/assets/tariffs.jpg" alt="Committee Image" class="committee-img" />
+                
+                <div class="committee-content">
+                    <h2>Tariffs</h2>
+                    <p class="short-text">
+                        As United States president Donald Trump takes office and threatens to <em>place worldwide tariffs on all his allies</em>,
+                        delegates must come together to discuss issues such as economic stability, the effects on the global job market, and potential trade conflicts...
+                    </p>
+                    <p class="more-content">
+                        As United States president Donald Trump takes office and threatens to <em>place worldwide tariffs on all his allies</em>,
+                        delegates must come together to discuss issues such as economic stability, the effects on the global job market, and potential trade conflicts.
+                        Additionally, this committee will debate about <em>threats of annexation from the United States</em>, questioning whether it’s too late
+                        for negotiations or if the only possible outcome is war.
+                        <br>
+                        <br>
+                        <strong>Topic 1:</strong> The United States has threatened to impose 25% tariffs onto several countries
+                        <br>
+                        <strong>Topic 2:</strong> The United States has announced their plans to annex Greenland
+                        <br>
+                        <br>
+                        <strong><a href="https://docs.google.com/document/d/1Ew6aK4hRppMA8k0dRhwzX2Ov1yuZHd9wFkiNU1paSxk/edit?usp=sharing" class="active">BACKGROUND GUIDE</a></strong>
+                    </p>
+                    <button class="read-more-btn">Read More</button>
+                </div>
             </div>
+
         </div>
+        <hr style="border: 1px solid #2f3a4e77; margin: 20px 0;">
 
-    </div>
-
-    <hr style="border: 1px solid #2f3a4e77; margin: 20px 0;">
-
-    <script src="eyciSite/code/javascript/index.js"></script>
-    <script>
-        // Read More Toggle
-        document.querySelectorAll('.read-more-btn').forEach(button => {
-            button.addEventListener('click', () => {
-                const more = button.previousElementSibling;
-                more.classList.toggle('show');
-                button.textContent = more.classList.contains('show') ? 'Read Less' : 'Read More';
-            });
-        });
-    </script>
-    <script src="eyciSite/code/javascript/committees.js"></script>
-</body>
+        <script type="text/javascript" src="eyciSite/code/javascript/index.js"></script>
+        <script type="text/javascript" src="eyciSite/code/javascript/committees.js"></script>
+    </body>
 </html>
